@@ -19,7 +19,7 @@ async function searchImages() {
   }
 
   const results = data.results;
-
+//push result in html element
   results.map((result) => {
     const imageWrapper = document.createElement("div");
     imageWrapper.classList.add("search-result");
@@ -42,7 +42,7 @@ async function searchImages() {
     showMoreButtonEl.style.display = "block";
   }
 }
-
+//to call the functions
 formEl.addEventListener("submit", (event) => {
   event.preventDefault();
   page = 1;
